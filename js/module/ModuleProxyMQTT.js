@@ -11,8 +11,8 @@ class ClassProxyMQTT {
     constructor(_mqtt) {
         this._MQTT = _mqtt;
         
-        let config = Process.GetMQTTClientConfig() || {};
-        this._Subs = {sensor: {}} || config.subs;
+        // let config = Process.GetMQTTClientConfig() || {};
+        this._Subs = {sensor: {}};
 
         this._SkipData = false;
         this._DataSkipInterval = null;
